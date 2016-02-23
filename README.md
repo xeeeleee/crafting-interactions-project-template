@@ -11,4 +11,5 @@ Everything you need to
 ### Connecting your app to heroku
 1. Create an account at [heroku.com](https://www.heroku.com/)
 2. Create a new app at [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)
-3. 
+3. Connect your app to your GitHub repo on Heroku.
+4. Enable automatic deploys from GitHub from the 'master' branch.
