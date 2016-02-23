@@ -13,3 +13,6 @@ Everything you need to
 2. Create a new app at [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps). Your app url will be `your-project-name.herokuapp.com`.
 3. Go to your app's **Deploy** tab and connect the app to your GitHub repo on Heroku.
 4. Enable automatic deploys from GitHub from the 'master' branch. Now, everytime you push new updates to `master`, heroku will pick-up the change and deploy the updates to your website.
+
+#### Reading the app logs
+The server that runs your app has a log you can tap into to see the status of your site. 
