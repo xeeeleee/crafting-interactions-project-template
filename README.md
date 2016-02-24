@@ -16,9 +16,11 @@ Once everything is setup the premise is simple.
 * If you don't want to mess with `git` on the command line you can use an app to manage your repos. [**Github Desktop**](https://desktop.github.com/) is made by Github and [**Git Tower**](https://www.git-tower.com/) is another good alternative.  
 *  ...but we are going to mess with the command line a little bit. If you're on OSX you've got **Terminal** inside your **Applications/Utilities** folder. 
 
-> Before doing the last step in the prereqs, open **Terminal** and type `which npm` and hit Enter. If you see a folder path output, you've install node and you're good to go. 
+> Before doing the last step in the prereqs, open **Terminal** and type `which node` and hit Enter. If you see a folder path output, you've installed node and you're good to go. 
 
-![Typing which npm](/screenshots/which-npm.png?raw=true "Optional Title")
+![Typing which node](/screenshots/which-node.png?raw=true "Which Node")  
+
+* The final step is to copy paste this line into your **Terminal** window and hit Enter. `npm install -g bower node-static`
 
 ## What's included  
 Everything you need to 
