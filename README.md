@@ -13,8 +13,12 @@ Once everything is setup the premise is simple.
 
 * If you don't have a code editor download **[SublimeText](http://www.sublimetext.com/3)** or **[Atom](https://atom.io/)** or **[Brackets](http://brackets.io/)**. All 3 have the basic code edtior capabilities we want but there may be features in one that you prefer.  
 * Install [nodejs](https://nodejs.org/en/). You can download either the LTS or the Stable version. LTS means _Long Term Support_ and is preferred by big enterprise organizations. The Stable release has newer features (that you prob won't need).  
-* If you don't want to mess with `git` on the command line you can use an app to manage your repos. [**Github Desktop**](https://desktop.github.com/) is made by Github and [Git Tower](https://www.git-tower.com/) is another good alternative.  
+* If you don't want to mess with `git` on the command line you can use an app to manage your repos. [**Github Desktop**](https://desktop.github.com/) is made by Github and [**Git Tower**](https://www.git-tower.com/) is another good alternative.  
 *  ...but we are going to mess with the command line a little bit. If you're on OSX you've got **Terminal** inside your **Applications/Utilities** folder. 
+
+> Before doing the last step in the prereqs, open **Terminal** and type `which npm` and hit Enter. If you see a folder path output, you've install node and you're good to go. 
+
+[Typing which npm](/screenshots/which-npm.png?raw=true "Optional Title")
 
 ## What's included  
 Everything you need to 
