@@ -18,7 +18,7 @@ Once everything is setup the premise is simple.
 
 > Before doing the last step in the prereqs, open **Terminal** and type `which npm` and hit Enter. If you see a folder path output, you've install node and you're good to go. 
 
-[Typing which npm](/screenshots/which-npm.png?raw=true "Optional Title")
+![Typing which npm](/screenshots/which-npm.png?raw=true "Optional Title")
 
 ## What's included  
 Everything you need to 
