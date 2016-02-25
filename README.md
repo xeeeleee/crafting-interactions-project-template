@@ -13,6 +13,8 @@ Once everything is setup the premise is simple.
 
 ## Prereqs 
 
+* Fork this repository into your github account. 
+* Create an account at [heroku.com](https://www.heroku.com/) if you don't have one.  
 * If you don't have a code editor download **[SublimeText](http://www.sublimetext.com/3)** or **[Atom](https://atom.io/)** or **[Brackets](http://brackets.io/)**. All 3 have the basic code edtior capabilities we want but there may be features in one that you prefer.  
 * Install [nodejs](https://nodejs.org/en/). You can download either the LTS or the Stable version. LTS means _Long Term Support_ and is preferred by big enterprise organizations. The Stable release has newer features (that you prob won't need).  
 * If you don't want to mess with `git` on the command line you can use an app to manage your repos. [**Github Desktop**](https://desktop.github.com/) is made by Github and [**Git Tower**](https://www.git-tower.com/) is another good alternative.  
@@ -27,6 +29,8 @@ Once everything is setup the premise is simple.
 > See if that worked by typing `which bower` and see if you've got a folder path. 
 
 > **Done!** This is a one-time setup and now you've got everyting you need to work with your project. Onwards.
+
+---
 
 ## What's included in this project
 ```
@@ -43,7 +47,7 @@ Once everything is setup the premise is simple.
 
 ### Breaking it down by file & folder  
 
-**README.md**  You're reading README.md right now. [README files](https://en.wikipedia.org/wiki/README) are like a project's owner's manual. They typically cover project structure, installation steps, contribution guidelines etc. 
+**README.md** is what you're reading right now. [README files](https://en.wikipedia.org/wiki/README) are like a project's owner's manual. They typically cover project structure, installation steps, contribution guidelines etc. The `.md` extension is for [markdown](http://markdowntutorial.com/) in case you're curious.
 
 **app.js** is a [node](https://nodejs.org/en/) app that runs on the server. This app is bare-bones. It's 15 lines of code that starts a web-server and serves files out of the public directory. If all you want to do is make a static website and push it to the web you don't need anything more complicated than this.  
 
@@ -61,17 +65,28 @@ Once everything is setup the premise is simple.
 
 > Running a project locally means starting a server on your computer and _serving_ the website to yourself so you can see what you're doing during development.
 
-### Installing project dependencies and starting the server
-**1. Install your project's dependencies.** I'll talk more about dependencies in a bit but for now know that this project depends on some 3rd party libraries to work and we need to install them into your project. Run `npm install` from the **Terminal** and everything should install fine.
+### Installing project dependencies and starting the server  
+
+**0. Change Directories in the Terminal.** We need to point the Terminal at your project. To do this type `cd ` and then drag-drop your entire project folder (not just the public folder) into the Terminal and you'll see the path to your project auto-populate in the window. Hit enter.
+
+**1. Install your project's dependencies.** I'll talk more about dependencies in a bit but for now know that this project depends on some 3rd party libraries to work and we need to have our package managers install them before we can do anything. Run `npm install` from the **Terminal**. 
 
 When the installation is complete you'll have two new folders in your project: `/node_modules` and `public/bower_components`.
 
 **2. Starting the server and previewing your site locally**
 Run `npm start` from the **Terminal**. Test it by visiting [http://localhost:3000](http://localhost:3000).
 
+**3. Making changes**  
+Edit any file in `public` and refresh the page to see the updates.
+
+---
+
+## Getting the project on the web  
+
+> Next you're going to create an app on [heroku](https://www.heroku.com/) and connect your github repo to it so your website gets updated when you push new code.
+
 ### Connecting your app to heroku
-1. Create an account at [heroku.com](https://www.heroku.com/)
-2. Create a new app at [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps). Your app url will be `your-project-name.herokuapp.com`.
+1. Create a new app at [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps). Your app url will be `your-project-name.herokuapp.com`.
 3. Go to your app's **Deploy** tab and connect the app to your GitHub repo on Heroku.
 4. Enable automatic deploys from GitHub from the 'master' branch. Now, everytime you push new updates to `master`, heroku will pick-up the change and deploy the updates to your website.
 
