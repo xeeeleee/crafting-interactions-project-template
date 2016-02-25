@@ -1,0 +1,106 @@
+/*
+* main nav bar
+*/
+nav {
+  height: 80px;
+  border-bottom: 1px solid #222;
+  transition: transform 1s;
+}
+
+nav > * {
+  float: left;
+}
+
+nav h1 {
+  margin: 0;
+  line-height: 80px;
+  margin-left: 10px;
+}
+
+nav .hamburger {
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+}
+
+nav ul {
+  transform: translateX(-100%);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  list-style-type: none;
+  color: white;
+  background-color: #4a90e2;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 40px;
+  min-height: 100vh;
+  width: 300px;
+}
+
+/*
+* main nav bar : expanded state
+*/
+nav.expanded {
+  transform: translateX(300px);
+}
+
+nav.expanded .hamburger{
+  margin-left: -32px;
+  z-index: 2;
+}
+
+nav.expanded .hamburger:before{
+  content: "\e014";
+  color: white;
+}
+
+nav.expanded h1 {
+  display: none;
+}
+
+/*
+* main nav bar : media query rules
+*/
+@media (min-width: 768px) {
+  nav .hamburger {
+    display: none;
+  }
+
+  nav {
+    transition: none;
+  }
+
+  nav h1 {
+    margin-left: 32px;
+  }
+
+  nav.expanded {
+    transform: none;
+  }
+
+  nav.expanded h1 {
+    display: block;
+  }
+
+  nav ul {
+    background-color: transparent;
+    color: inherit;
+    min-height: auto;
+    width: auto;
+    padding: 0;
+    line-height: auto;
+    transform: none;
+    position: static;
+    margin-left: 32px;
+  }
+
+  ul li {
+    float: left;
+    line-height: 80px;
+    margin: 0 16px;
+  }
+}

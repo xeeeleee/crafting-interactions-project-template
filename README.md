@@ -49,11 +49,11 @@ Once everything is setup the premise is simple.
 
 **README.md** is what you're reading right now. [README files](https://en.wikipedia.org/wiki/README) are like a project's owner's manual. They typically cover project structure, installation steps, contribution guidelines etc. The `.md` extension is for [markdown](http://markdowntutorial.com/) in case you're curious.
 
-**app.js** is a [node](https://nodejs.org/en/) app that runs on the server. This app is bare-bones. It's 15 lines of code that starts a web-server and serves files out of the public directory. If all you want to do is make a static website and push it to the web you don't need anything more complicated than this.  
+**[app.js](app.js)** is a [node](https://nodejs.org/en/) app that runs on the server. This app is bare-bones. It's 15 lines of code that starts a web-server and serves files out of the public directory. If all you want to do is make a static website and push it to the web you don't need anything more complicated than this.  
 
-**bower.json** is a config file for the `bower` utility you installed in the prereqs. [Bower](http://bower.io/) is a [package manager](https://en.wikipedia.org/wiki/Package_manager) for front-end projects. The bower site says it best: _"Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you."_
+**[bower.json](bower.json)** is a config file for the `bower` utility you installed in the prereqs. [Bower](http://bower.io/) is a [package manager](https://en.wikipedia.org/wiki/Package_manager) for front-end projects. The bower site says it best: _"Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you."_
 
-**package.json** is a config file for the `npm` package manager. Bower is for front-end packages  and npm is for server-side packages.  
+**[package.json](package.json)** is a config file for the `npm` package manager. Bower is for front-end packages  and npm is for server-side packages.  
 
 **public/** is the folder where you want to put everything that's part of your website. If your site is `my-site.herokuapp.com` and you have `public/image/cat.png` in your public folder, a user can see your image at `my-site.herokuapp.com/image/cat.png`. Got it?  
 
@@ -96,9 +96,22 @@ Edit any file in `public` and refresh the page to see the updates.
 ## Advanced Topics  
 
 ### Working with the package managers. 
-If you open either [bower.json](bower.json) or 
+If you open either [bower.json](bower.json) or [package.json](package.json) you'll see a `dependencies` list. Here's what bower's looks like:
 ```
-```
+"dependencies": {
+  "jquery": "~2.2.1",
+  "bootstrap": "~3.3.6"
+}
+```  
+#### Searching for packages  
+You can [search on the bower website](http://bower.io/search/) to find packages that might be helpful for your project. 
+
+#### Installing a bower package  
+Let's install [font awesome](https://fortawesome.github.io/Font-Awesome/).  
+
+`bower install --save fontawesome`
+
+Once that installs you'll have `public/bower_components/fontawesome` in your project.
 
 #### Reading the heroku app logs to make sure everything is running okay.
 The server that runs your app has a log you can tap into to see the status of your site. 
