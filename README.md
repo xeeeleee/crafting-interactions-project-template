@@ -50,7 +50,7 @@ Once everything is setup the premise is simple.
 
 **README.md** is what you're reading right now. [README files](https://en.wikipedia.org/wiki/README) are like a project's owner's manual. They typically cover project structure, installation steps, contribution guidelines etc. The `.md` extension is for [markdown](http://markdowntutorial.com/) in case you're curious.
 
-**[app.js](app.js)** is a [node](https://nodejs.org/en/) app that runs on the server. This app is bare-bones. It's 15 lines of code that starts a web-server and serves files out of the public directory. If all you want to do is make a static website and push it to the web you don't need anything more complicated than this.  
+**[app.js](app.js)** is a [node](https://nodejs.org/en/) app that runs on the server. This app is bare-bones. It's 15 lines of code that starts a web-server and serves files out of the `public` folder. If all you want to do is make a static website and push it to the web you don't need anything more complicated than this.  
 
 **[bower.json](bower.json)** is a config file for the `bower` utility you installed in the prereqs. [Bower](http://bower.io/) is a [package manager](https://en.wikipedia.org/wiki/Package_manager) for front-end projects. The bower site says it best: _"Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you."_
 
