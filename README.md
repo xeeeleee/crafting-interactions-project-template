@@ -87,7 +87,7 @@ Edit any file in `public` and refresh the page to see the updates.
 
 ### Connecting your app to heroku
 1. Create a new app at [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps). Your app url will be `your-project-name.herokuapp.com`.
-2. Go to your app's **Deploy** tab and connect the app to your GitHub repo on Heroku.
+2. Go to your app's **Deploy** tab and connect the app to your GitHub repo.
 ![Connect Heroku to Github](/screenshots/heroku-connect.png?raw=true "Connect Heroku") 
 
 4. Enable automatic deploys from GitHub from the 'master' branch. Now, everytime you push new updates to `master`, heroku will pick-up the change and deploy the updates to your website. 
