@@ -4,9 +4,10 @@
 
 The goal of this project is to give you a template to publish on the web. The template will also give you a glimpse into how contemporary web projects are structured.
 
-Once everything is setup the premise is simple.  
-1. put your html, css, javascript, images etc. into the `public` folder
-2. push your changes to a github repo
+Once everything is setup the premise is simple.
+
+1. put your html, css, javascript, images etc. into the `public` folder  
+2. push your changes to a github repo  
 3. github pushes to a webserver and the site is updated
 
 ---
@@ -93,6 +94,8 @@ Edit any file in `public` and refresh the page to see the updates.
 4. Enable automatic Github deploys from the 'master' branch. Now, everytime you push new updates to `master`, heroku will pick-up the change and deploy the updates to your website. 
 ![Deploy from Github](/screenshots/heroku-deploy.png?raw=true "Deploy from Github")
 
+---
+
 ## Advanced Topics  
 
 ### Working with the package managers. 
@@ -113,5 +116,10 @@ Let's install [font awesome](https://fortawesome.github.io/Font-Awesome/).
 
 Once that installs you'll have `public/bower_components/fontawesome` in your project.
 
-#### Reading the heroku app logs to make sure everything is running okay.
-The server that runs your app has a log you can tap into to see the status of your site. 
+### Reading the heroku logs to make sure everything is running okay.
+
+> The heroku server that runs your app has a running log that you can tap into to see the status of your site. 
+
+1. Install the [heroku toolbelt](https://toolbelt.heroku.com/)  
+2. From the **Terminal** run `heroku logs --app your-heroku-app-name --tail`  
+3. Try pushing an update to github and watch the logs update.
