@@ -59,10 +59,15 @@ Once everything is setup the premise is simple.
 
 ## Running the project locally
 
-### Developing your website locally
-1. Install your project's dependencies.
+> Running a project locally means starting a server on your computer and _serving_ the website to yourself so you can see what you're doing during development.
 
-2. Start your server with `npm start`. Test it by visiting [http://localhost:3000](http://localhost:3000).
+### Installing project dependencies and starting the server
+**1. Install your project's dependencies.** I'll talk more about dependencies in a bit but for now know that this project depends on some 3rd party libraries to work and we need to install them into your project. Run `npm install` from the **Terminal** and everything should install fine.
+
+When the installation is complete you'll have two new folders in your project: `/node_modules` and `public/bower_components`.
+
+**2. Starting the server and previewing your site locally**
+Run `npm start` from the **Terminal**. Test it by visiting [http://localhost:3000](http://localhost:3000).
 
 ### Connecting your app to heroku
 1. Create an account at [heroku.com](https://www.heroku.com/)

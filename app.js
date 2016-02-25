@@ -1,5 +1,5 @@
 var static = require('node-static');
-  
+var port = process.env.PORT || 3000;
 // 
 // Create a node-static server instance to serve the './public' folder 
 // 
@@ -12,4 +12,7 @@ require('http').createServer(function (request, response) {
     //  
     file.serve(request, response);
   }).resume();
-}).listen(process.env.PORT || 3000);
+}).listen(port);
+
+
+console.log('Your server is running at http://localhost:',port);
