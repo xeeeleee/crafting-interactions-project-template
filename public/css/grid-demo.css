@@ -1,0 +1,12 @@
+.row{
+  margin-bottom: 30px;
+}
+
+.box{
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 10px;
+  min-height: 200px;
+}
