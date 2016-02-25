@@ -90,8 +90,15 @@ Edit any file in `public` and refresh the page to see the updates.
 2. Go to your app's **Deploy** tab and connect the app to your GitHub repo.
 ![Connect Heroku to Github](/screenshots/heroku-connect.png?raw=true "Connect Heroku") 
 
-4. Enable automatic deploys from GitHub from the 'master' branch. Now, everytime you push new updates to `master`, heroku will pick-up the change and deploy the updates to your website. 
+4. Enable automatic Github deploys from the 'master' branch. Now, everytime you push new updates to `master`, heroku will pick-up the change and deploy the updates to your website. 
 ![Deploy from Github](/screenshots/heroku-deploy.png?raw=true "Deploy from Github")
 
-#### Reading the app logs
+## Advanced Topics  
+
+### Working with the package managers. 
+If you open either [bower.json](bower.json) or 
+```
+```
+
+#### Reading the heroku app logs to make sure everything is running okay.
 The server that runs your app has a log you can tap into to see the status of your site. 
